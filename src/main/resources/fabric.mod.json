@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "travel_overhaul",
+  "version": "${version}",
+
+  "name": "Travel Overhaul",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/travel_overhaul/icon.png",
+
+  "environment": "*",
+  "entrypoints": {},
+
+      "mixins": [
+        "travel_overhaul.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
