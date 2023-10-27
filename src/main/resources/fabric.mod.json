@@ -2,25 +2,30 @@
   "schemaVersion": 1,
   "id": "travel_overhaul",
   "version": "${version}",
-
   "name": "Travel Overhaul",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/Daniel/Travel Overhaul"
+  },
   "license": "MIT",
   "icon": "assets/travel_overhaul/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "travel_overhaul.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "net.rotgruengelb.travel_overhaul.client.TravelOverhaulClient"
+    ],
+    "main": [
+      "net.rotgruengelb.travel_overhaul.TravelOverhaul"
+    ]
+  },
+  "mixins": [
+    "travel_overhaul.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "quirl": "${quirl_version}"
   }
 }
