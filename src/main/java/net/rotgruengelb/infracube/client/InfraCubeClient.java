@@ -1,9 +1,9 @@
-package net.rotgruengelb.travel_overhaul.client;
+package net.rotgruengelb.infracube.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 
-public class TravelOverhaulClient implements ClientModInitializer {
+public class InfraCubeClient implements ClientModInitializer {
     /**
      * Runs the mod initializer on the client environment.
      */

@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/block",
   "textures": {
-    "particle": "travel_overhaul:block/crimson_nylium_path_side",
-    "top": "travel_overhaul:block/crimson_nylium_path_top",
-    "side": "travel_overhaul:block/crimson_nylium_path_side",
+    "particle": "infracube:block/crimson_nylium_path_side",
+    "top": "infracube:block/crimson_nylium_path_top",
+    "side": "infracube:block/crimson_nylium_path_side",
     "bottom": "minecraft:block/netherrack"
   },
   "elements": [

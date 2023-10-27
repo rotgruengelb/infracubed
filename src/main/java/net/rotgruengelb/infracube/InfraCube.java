@@ -1,4 +1,4 @@
-package net.rotgruengelb.travel_overhaul;
+package net.rotgruengelb.infracube;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -6,14 +6,14 @@ import net.minecraft.block.Blocks;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.rotgruengelb.quirl.behavior.shovel.v1.CustomShovelInteract;
-import net.rotgruengelb.travel_overhaul.block.ModBlocks;
-import net.rotgruengelb.travel_overhaul.util.CampfireUpdraftChecker;
+import net.rotgruengelb.infracube.block.ModBlocks;
+import net.rotgruengelb.infracube.util.CampfireUpdraftChecker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TravelOverhaul implements ModInitializer {
+public class InfraCube implements ModInitializer {
 
-    public static final String MOD_ID = "travel_overhaul";
+    public static final String MOD_ID = "infracube";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override

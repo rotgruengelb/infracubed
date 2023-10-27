@@ -1,4 +1,4 @@
-package net.rotgruengelb.travel_overhaul.util;
+package net.rotgruengelb.infracube.util;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.block.BlockState;
@@ -12,7 +12,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.rotgruengelb.travel_overhaul.TravelOverhaul;
+import net.rotgruengelb.infracube.InfraCube;
 
 import java.util.HashMap;
 import java.util.List;
@@ -97,7 +97,7 @@ public class CampfireUpdraftChecker implements ServerTickEvents.StartTick {
                                 }
                                 double updaft = valuesMap.get(i);
 
-                                TravelOverhaul.LOGGER.info(String.valueOf(updaft));
+                                InfraCube.LOGGER.info(String.valueOf(updaft));
                                 if (updaft > 0.2) {
                                     player.addVelocity(0, updaft, 0);
                                     player.velocityModified = true;

@@ -1,4 +1,4 @@
-package net.rotgruengelb.travel_overhaul.block;
+package net.rotgruengelb.infracube.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -10,8 +10,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.rotgruengelb.travel_overhaul.TravelOverhaul;
-import net.rotgruengelb.travel_overhaul.block.custom.NyliumPathBlock;
+import net.rotgruengelb.infracube.InfraCube;
+import net.rotgruengelb.infracube.block.custom.NyliumPathBlock;
 
 public class ModBlocks {
     public static final Block CRIMSON_NYLIUM_PATH = registerBlock("crimson_nylium_path",
@@ -23,17 +23,17 @@ public class ModBlocks {
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK,
-                new Identifier(TravelOverhaul.MOD_ID, name), block);
+                new Identifier(InfraCube.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM,
-                new Identifier(TravelOverhaul.MOD_ID, name),
+                new Identifier(InfraCube.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
 
     public static void registerModBlocks() {
-        TravelOverhaul.LOGGER.info("Registering ModBlocks for " + TravelOverhaul.MOD_ID);
+        InfraCube.LOGGER.info("Registering ModBlocks for " + InfraCube.MOD_ID);
     }
 
 

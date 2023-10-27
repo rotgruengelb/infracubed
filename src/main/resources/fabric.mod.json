@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "travel_overhaul",
+  "id": "infracube",
   "version": "${version}",
-  "name": "Travel Overhaul",
+  "name": "InfraCube",
   "description": "",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/Daniel/Travel Overhaul"
+    "repo": "https://github.com/rotgruengelb/InfraCube"
   },
   "license": "MIT",
-  "icon": "assets/travel_overhaul/icon.png",
+  "icon": "assets/infracube/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "net.rotgruengelb.travel_overhaul.client.TravelOverhaulClient"
+      "net.rotgruengelb.infracube.client.InfraCubeClient"
     ],
     "main": [
-      "net.rotgruengelb.travel_overhaul.TravelOverhaul"
+      "net.rotgruengelb.infracube.InfraCube"
     ]
   },
   "mixins": [
-    "travel_overhaul.mixins.json"
+    "infracube.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

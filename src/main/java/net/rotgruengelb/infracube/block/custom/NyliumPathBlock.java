@@ -1,4 +1,4 @@
-package net.rotgruengelb.travel_overhaul.block.custom;
+package net.rotgruengelb.infracube.block.custom;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
