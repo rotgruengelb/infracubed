@@ -4,6 +4,7 @@
   "package": "net.rotgruengelb.infracube.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AbstractMinecartEntityMixin"
   ],
   "client": [
   ],

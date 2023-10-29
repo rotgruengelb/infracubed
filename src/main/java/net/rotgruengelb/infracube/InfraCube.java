@@ -5,9 +5,9 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.block.Blocks;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.rotgruengelb.quirl.mechanics.interact.shovel.v1.CustomShovelBlockInteract;
 import net.rotgruengelb.infracube.block.ModBlocks;
 import net.rotgruengelb.infracube.util.CampfireUpdraftChecker;
+import net.rotgruengelb.quirl.mechanics.interact.shovel.v1.CustomShovelBlockInteract;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
