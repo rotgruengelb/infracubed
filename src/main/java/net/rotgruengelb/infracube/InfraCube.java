@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.block.Blocks;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.rotgruengelb.quirl.behavior.shovel.v1.CustomShovelInteract;
+import net.rotgruengelb.quirl.mechanics.interact.shovel.v1.CustomShovelBlockInteract;
 import net.rotgruengelb.infracube.block.ModBlocks;
 import net.rotgruengelb.infracube.util.CampfireUpdraftChecker;
 import org.slf4j.Logger;
@@ -19,8 +19,8 @@ public class InfraCube implements ModInitializer {
     @Override
     public void onInitialize() {
 
-        CustomShovelInteract.addResult(Blocks.WARPED_NYLIUM.getDefaultState(), ModBlocks.WARPED_NYLIUM_PATH.getDefaultState(), SoundEvents.ITEM_SHOVEL_FLATTEN, SoundCategory.BLOCKS);
-        CustomShovelInteract.addResult(Blocks.CRIMSON_NYLIUM.getDefaultState(), ModBlocks.CRIMSON_NYLIUM_PATH.getDefaultState(), SoundEvents.ITEM_SHOVEL_FLATTEN, SoundCategory.BLOCKS);
+        CustomShovelBlockInteract.addResult(Blocks.WARPED_NYLIUM.getDefaultState(), ModBlocks.WARPED_NYLIUM_PATH.getDefaultState(), SoundEvents.ITEM_SHOVEL_FLATTEN, SoundCategory.BLOCKS);
+        CustomShovelBlockInteract.addResult(Blocks.CRIMSON_NYLIUM.getDefaultState(), ModBlocks.CRIMSON_NYLIUM_PATH.getDefaultState(), SoundEvents.ITEM_SHOVEL_FLATTEN, SoundCategory.BLOCKS);
 
         ServerTickEvents.START_SERVER_TICK.register(new CampfireUpdraftChecker());
     }
