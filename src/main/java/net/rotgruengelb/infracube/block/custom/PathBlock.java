@@ -1,4 +1,4 @@
-package net.rotgruengelb.infracube.block.custom;
+package net.rotgruengelb.infracubed.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
