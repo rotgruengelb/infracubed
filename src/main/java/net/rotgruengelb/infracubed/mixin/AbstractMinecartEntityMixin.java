@@ -6,12 +6,14 @@ import net.minecraft.entity.vehicle.AbstractMinecartEntity;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractMinecartEntity.class)
 public abstract class AbstractMinecartEntityMixin {
+    @Unique
     private double getMaxSpeedMultiplier() {
 
         BlockPos pos = ((AbstractMinecartEntity) (Object) this).getBlockPos();
@@ -44,6 +46,7 @@ public abstract class AbstractMinecartEntityMixin {
         cir.setReturnValue(cir.getReturnValue() * getMaxSpeedMultiplier());
     }
 
+    @Unique
     private float getVelocityMultiplierMultiplier() {
 
         BlockPos pos = ((AbstractMinecartEntity) (Object) this).getBlockPos();
@@ -70,6 +73,7 @@ public abstract class AbstractMinecartEntityMixin {
 
         return multiplier;
     }
+
 
     @Inject(method = "getVelocityMultiplier", at = @At("RETURN"), cancellable = true)
     private void getVelocityMultiplier(CallbackInfoReturnable<Float> cir) {

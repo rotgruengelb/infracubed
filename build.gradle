@@ -71,14 +71,14 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             groupId = project.maven_group
-            artifactId = 'infracube'
+            artifactId = 'infracubed'
             version = "${version}"
             from components.java
 
             pom {
-                name = 'InfraCube'
+                name = 'infracubed'
                 description = 'A Minecraft FabricMC mod that revamps the way players get around and build infrastructure in Minecraft.'
-                url = 'https://github.com/rotgruengelb/infracube'
+                url = 'https://github.com/rotgruengelb/infracubed'
                 licenses {
                     license {
                         name = 'MIT License'
@@ -93,9 +93,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = 'scm:git:git://github.com/rotgruengelb/infracube.git'
-                    developerConnection = 'scm:git:ssh://github.com/rotgruengelb/infracube.git'
-                    url = 'https://github.com/rotgruengelb/infracube/'
+                    connection = 'scm:git:git://github.com/rotgruengelb/infracubed.git'
+                    developerConnection = 'scm:git:ssh://github.com/rotgruengelb/infracubed.git'
+                    url = 'https://github.com/rotgruengelb/infracubed/'
                 }
             }
         }

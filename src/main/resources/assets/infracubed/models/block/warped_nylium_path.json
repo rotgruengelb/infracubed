@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/block",
   "textures": {
-    "particle": "infracube:block/warped_nylium_path_side",
-    "top": "infracube:block/warped_nylium_path_top",
-    "side": "infracube:block/warped_nylium_path_side",
+    "particle": "infracubed:block/warped_nylium_path_side",
+    "top": "infracubed:block/warped_nylium_path_top",
+    "side": "infracubed:block/warped_nylium_path_side",
     "bottom": "minecraft:block/netherrack"
   },
   "elements": [

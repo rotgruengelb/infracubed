@@ -9,7 +9,7 @@
     "repo": "https://github.com/rotgruengelb/infracubed"
   },
   "license": "MIT",
-  "icon": "assets/infracube/icon.png",
+  "icon": "assets/infracubed/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [

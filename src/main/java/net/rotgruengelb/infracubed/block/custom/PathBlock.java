@@ -81,6 +81,5 @@ public class PathBlock extends Block {
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return null;
     }
-
 }
 

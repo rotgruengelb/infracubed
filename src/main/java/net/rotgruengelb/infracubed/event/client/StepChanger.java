@@ -1,10 +1,10 @@
-package net.rotgruengelb.infracube.client;
+package net.rotgruengelb.infracubed.event.client;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.rotgruengelb.infracube.util.ModTags;
+import net.rotgruengelb.infracubed.util.ModTags;
 
 public class StepChanger implements ClientTickEvents.EndTick {
 

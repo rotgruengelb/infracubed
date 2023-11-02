@@ -1,4 +1,4 @@
-package net.rotgruengelb.infracube.util;
+package net.rotgruengelb.infracubed.event.server;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.block.BlockState;
@@ -12,31 +12,29 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.rotgruengelb.infracube.InfraCube;
+import net.rotgruengelb.infracubed.InfraCubed;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static net.minecraft.block.CampfireBlock.SIGNAL_FIRE;
 
-public class CampfireUpdraftChecker implements ServerTickEvents.StartTick {
+public class CampfireUpdraft implements ServerTickEvents.StartTick {
     private static boolean isSignalCampfire(BlockState state) {
         return state.contains(SIGNAL_FIRE) && state.isIn(BlockTags.CAMPFIRES) && state.get(SIGNAL_FIRE);
     }
 
     @Override
     public void onStartTick(MinecraftServer server) {
-        List<ServerPlayerEntity> players = server.getPlayerManager().getPlayerList();
-        for (ServerPlayerEntity player : players) {
+        for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
 
-            World world = player.getWorld();
-            BlockPos pos = player.getBlockPos();
-
-            int range = 24;
             ItemStack chest_slot_content = player.getInventory().getArmorStack(2);
 
-            if (chest_slot_content.getItem() instanceof ElytraItem && player.isFallFlying()) {
+            if (chest_slot_content.getItem() instanceof ElytraItem && ElytraItem.isUsable(chest_slot_content) && player.isFallFlying()) {
+
+                World world = player.getWorld();
+                BlockPos pos = player.getBlockPos();
+                int range = 24;
 
                 for (int i = 0; i < range; i++) {
                     BlockState downBlock = world.getBlockState(pos.down(i));
@@ -97,7 +95,7 @@ public class CampfireUpdraftChecker implements ServerTickEvents.StartTick {
                                 }
                                 double updaft = valuesMap.get(i);
 
-                                InfraCube.LOGGER.info(String.valueOf(updaft));
+                                InfraCubed.LOGGER.info(String.valueOf(updaft));
                                 if (updaft > 0.2) {
                                     player.addVelocity(0, updaft, 0);
                                     player.velocityModified = true;

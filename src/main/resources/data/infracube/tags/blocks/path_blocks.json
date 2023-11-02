@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:dirt_path",
-    "infracube:crimson_nylium_path",
-    "infracube:warped_nylium_path"
+    "infracubed:crimson_nylium_path",
+    "infracubed:warped_nylium_path"
   ]
 }

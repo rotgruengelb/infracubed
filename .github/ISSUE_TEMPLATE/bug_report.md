@@ -35,7 +35,7 @@ assignees: rotgruengelb
 ... (Other mods and their versions you are running)
 
 ### Other System Info:
-... (Any System/Game Info youd like to add)
+... (Any System/Game Info you'd like to add)
 
 
 ## More
