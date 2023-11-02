@@ -7,33 +7,44 @@ assignees: rotgruengelb
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Describe the bug:
+...
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Steps to Reproduce:
+1. ...
+2. ...
+3. ...
+...
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
 
-**Versions**
+## Expected behavior:
+...
+
+
+## System/Game Info 
+
+### Versions:
 `quirl` version:
 `fabric-api` version:
 `infracube` version: 
 `minecraft` version:
 
-**Additional context**
-Add any other context about the problem here.
+### Other mods:
+... (Other mods and their versions you are running)
 
-**Logs**
-If possible, add logs or crash reports!
-```
+### Other System Info:
+... (Any System/Game Info youd like to add)
+
+
+## More
+
+### Screenshots:
+... (Add Screenshots if possible)
+
+
+### Logs:
+(If possible, add logs or crash reports!)
+```log
 [log/report here]
 ```
