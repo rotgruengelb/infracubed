@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "infracube",
+  "id": "infracubed",
   "version": "${version}",
-  "name": "InfraCube",
+  "name": "Infra³ (infracubed)",
   "description": "",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/rotgruengelb/InfraCube"
+    "repo": "https://github.com/rotgruengelb/infracubed"
   },
   "license": "MIT",
   "icon": "assets/infracube/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "net.rotgruengelb.infracube.client.InfraCubeClient"
+      "net.rotgruengelb.infracubed.client.InfraCubedClient"
     ],
     "main": [
-      "net.rotgruengelb.infracube.InfraCube"
+      "net.rotgruengelb.infracubed.InfraCubed"
     ]
   },
   "mixins": [
-    "infracube.mixins.json"
+    "infracubed.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
