@@ -1,4 +1,4 @@
-package net.rotgruengelb.infracube.mixin;
+package net.rotgruengelb.infracubed.mixin;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
