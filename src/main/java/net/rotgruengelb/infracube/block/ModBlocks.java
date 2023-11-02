@@ -1,4 +1,4 @@
-package net.rotgruengelb.infracube.block;
+package net.rotgruengelb.infracubed.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -10,8 +10,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.rotgruengelb.infracube.InfraCube;
-import net.rotgruengelb.infracube.block.custom.NyliumPathBlock;
+import net.rotgruengelb.infracubed.InfraCubed;
+import net.rotgruengelb.infracubed.block.custom.NyliumPathBlock;
 
 public class ModBlocks {
     public static final Block CRIMSON_NYLIUM_PATH = registerBlock("crimson_nylium_path",
@@ -23,7 +23,7 @@ public class ModBlocks {
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK,
-                new Identifier(InfraCube.MOD_ID, name), block);
+                new Identifier(InfraCubed.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block) {
