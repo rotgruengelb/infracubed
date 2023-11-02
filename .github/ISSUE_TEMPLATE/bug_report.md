@@ -15,6 +15,7 @@ assignees: rotgruengelb
 1. ...
 2. ...
 3. ...
+
 ...
 
 
@@ -27,7 +28,7 @@ assignees: rotgruengelb
 ### Versions:
 `quirl` version:
 `fabric-api` version:
-`infracube` version: 
+`infracubed` version: 
 `minecraft` version:
 
 ### Other mods:
