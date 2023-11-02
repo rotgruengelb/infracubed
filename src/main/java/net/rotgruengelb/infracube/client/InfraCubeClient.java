@@ -1,9 +1,9 @@
-package net.rotgruengelb.infracube.client;
+package net.rotgruengelb.infracubed.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 
-public class InfraCubeClient implements ClientModInitializer {
+public class InfraCubedClient implements ClientModInitializer {
     /**
      * Runs the mod initializer on the client environment.
      */
