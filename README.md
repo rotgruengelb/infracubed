@@ -6,6 +6,11 @@ description: >-
 
 # InfraCube
 
-<pre class="language-markdown"><code class="lang-markdown"><strong>[![modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_vector.svg)](https://modrinth.com/mod/infracubed)
-</strong></code></pre>
+{% embed url="https://modrinth.com/mod/infracubed" %}
+
+{% embed url="https://github.com/rotgruengelb/infracubed" %}
+
+
+
+## Feature Overview
 
